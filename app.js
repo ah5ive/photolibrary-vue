@@ -1,4 +1,4 @@
-
+//footer component
 Vue.component('myfooter', {
   props: {
       foo: {
@@ -8,7 +8,7 @@ Vue.component('myfooter', {
   },
     template:`<footer>{{foo}}</footer>`,
 })
-
+//search bar
 Vue.component('searchbar',{
     template:`
      <div>
@@ -52,7 +52,7 @@ Vue.component('searchbar',{
       }
     }
 });
-
+//gallery
 Vue.component('gallery',{
   props: {
     getkeyword:{
@@ -97,7 +97,7 @@ Vue.component('gallery',{
 
   }
 });
-
+//overlaymodal
 Vue.component('overlay',{
   props: {
     openmodal: {
@@ -150,7 +150,7 @@ Vue.component('overlay',{
     }
   }
 })
-
+//main vue
 var app = new Vue({
   el: '#app',
   data(){
