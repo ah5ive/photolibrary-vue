@@ -32,7 +32,7 @@ Vue.component('searchbar',{
     methods: {
       onSubmitHandler(){
         const url = "https://api.unsplash.com/search/photos/?page=1&per_page=10&query=";
-        fetch(url + this.searchInput + "&client_id=c69a82f8c34f78397e366bce266fec73724b31b8004a269885abee184301469c")
+        fetch(url + this.searchInput + "&client_id=YOUR_ACCESS_KEY")
         .then(res => {
         return res.json();
         })
@@ -174,7 +174,7 @@ var app = new Vue({
   },
   mounted(){
     console.log("halo World")
-    const url = "https://api.unsplash.com/photos?per_page=20&client_id=c69a82f8c34f78397e366bce266fec73724b31b8004a269885abee184301469c";
+    const url = "https://api.unsplash.com/photos?per_page=20&client_id=YOUR_ACCESS_KEY";
         fetch(url)
         .then(res => {
         return res.json();
